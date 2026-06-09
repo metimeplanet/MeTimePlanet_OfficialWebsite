@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story — Me-Time Planet</title>
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    .story-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2xl);
+      align-items: start;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg);
+    }
+    .story-text h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 400;
+      margin-bottom: var(--space-md);
+      color: var(--color-ink);
+    }
+    .story-text p {
+      font-size: var(--text-base);
+      color: var(--color-ink-muted);
+      line-height: 1.9;
+      margin-bottom: var(--space-md);
+    }
+    .story-img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: sticky;
+      top: calc(var(--nav-height) + var(--space-lg));
+    }
+    .story-img img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--space-lg) var(--space-xl);
+    }
+    .value-card {
+      background: var(--color-paper-2);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      text-align: center;
+    }
+    .value-card .icon { font-size: 2rem; margin-bottom: var(--space-md); }
+    .value-card h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-weight: 400;
+      color: var(--color-ink);
+      margin-bottom: var(--space-sm);
+    }
+    .value-card p {
+      font-size: var(--text-sm);
+      color: var(--color-ink-muted);
+      line-height: 1.75;
+    }
+    @media (max-width: 768px) {
+      .story-layout { grid-template-columns: 1fr; padding: var(--space-lg) var(--space-md); }
+      .story-img { position: static; }
+      .values-grid { grid-template-columns: 1fr; padding: var(--space-md); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">ME-TIME PLANET</a>
+      <nav class="main-nav">
+        <a href="our-story.html">Our Story</a>
+        <a href="calm-crafts.html">Calm Crafts</a>
+        <a href="tea-tastings.html">Tea Tastings</a>
+        <a href="journal.html">Journal</a>
+        <a href="workshops.html">Explore Workshops</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="our-story.html">Our Story</a>
+      <a href="calm-crafts.html">Calm Crafts</a>
+      <a href="tea-tastings.html">Tea Tastings</a>
+      <a href="journal.html">Journal</a>
+      <a href="workshops.html">Explore Workshops</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="eyebrow-label">About Us</span>
+      <h1>Our Story</h1>
+      <div class="page-divider"></div>
+      <p>A small planet born from exhaustion, love, and the quiet determination to find yourself again.</p>
+    </section>
+
+    <div class="story-layout">
+      <div class="story-text">
+        <h2>From One Mother's Journey</h2>
+        <p>When our son arrived two years ago, the world as I knew it was lovingly dismantled. Every hour, every thought, every impulse became his. And for a while, that felt right — beautiful, even. But somewhere in the sleepless months that followed, I noticed a quiet fading. Not of love, but of me.</p>
+        <p>I had forgotten what it felt like to do something just because it brought me joy. To steep a cup of tea slowly and actually taste it. To fold paper, light incense, write a sentence just for myself.</p>
+        <p>Me-Time Planet started as a WeChat account — a small corner of the internet where I could document these small acts of reclaiming. A cup of matcha here. A crafting afternoon there. A note on why traditional Chinese art forms feel like a balm for the modern mind.</p>
+        <p>It grew quietly, the way the best things do. Readers reached out to say <em>"me too."</em> And so a platform became a community, and a community became a purpose.</p>
+        <h2>What We Believe</h2>
+        <p>We believe rest is not a luxury. We believe that creating something with your hands — whether it is a fish lantern or a bowl of floating lacquer — is one of the most grounding things a person can do. We believe a good cup of tea, prepared with intention, is a genuine act of self-care.</p>
+        <p>We believe mothers, caregivers, and busy women deserve a planet of their own.</p>
+        <p>Welcome to ours.</p>
+      </div>
+      <div class="story-img">
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&q=80" alt="Woman enjoying a quiet moment with tea" />
+      </div>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="icon">🍵</div>
+        <h3>Rest</h3>
+        <p>We champion guilt-free stillness. Resting is not laziness — it is how we replenish everything we give to others.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🪔</div>
+        <h3>Create</h3>
+        <p>Handcraft reconnects us to the present moment. We explore traditional Chinese art forms that have soothed souls for centuries.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🌱</div>
+        <h3>Grow</h3>
+        <p>We read, write, gather, and share — because self-growth is a lifelong and deeply personal journey.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="logo">ME-TIME PLANET</p>
+        <p class="footer-tagline">Rest. Re-Charge. Self-Grow.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="footer-col-title">Explore</p>
+          <a href="our-story.html">Our Story</a>
+          <a href="calm-crafts.html">Calm Crafts</a>
+          <a href="tea-tastings.html">Tea Tastings</a>
+          <a href="journal.html">Journal</a>
+          <a href="workshops.html">Workshops</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Me-Time Planet. Made with love and a cup of tea.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

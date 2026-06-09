@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calm Crafts — Me-Time Planet</title>
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    .craft-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-bottom: var(--space-lg);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--color-white);
+      border: 1px solid var(--color-paper-2);
+    }
+    .craft-feature:nth-child(even) .craft-feature__img { order: 2; }
+    .craft-feature:nth-child(even) .craft-feature__text { order: 1; }
+    .craft-feature__img img {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+    }
+    .craft-feature__text {
+      padding: var(--space-xl) var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .craft-feature__text .eyebrow-label { color: var(--color-accent); }
+    .craft-feature__text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 400;
+      color: var(--color-ink);
+      margin-bottom: var(--space-md);
+      line-height: 1.25;
+    }
+    .craft-feature__text p {
+      font-size: var(--text-base);
+      color: var(--color-ink-muted);
+      line-height: 1.85;
+      margin-bottom: var(--space-md);
+    }
+    @media (max-width: 768px) {
+      .craft-feature { grid-template-columns: 1fr; }
+      .craft-feature:nth-child(even) .craft-feature__img { order: 0; }
+      .craft-feature:nth-child(even) .craft-feature__text { order: 1; }
+      .craft-feature__text { padding: var(--space-lg) var(--space-md); }
+      .craft-feature__img img { min-height: 240px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">ME-TIME PLANET</a>
+      <nav class="main-nav">
+        <a href="our-story.html">Our Story</a>
+        <a href="calm-crafts.html">Calm Crafts</a>
+        <a href="tea-tastings.html">Tea Tastings</a>
+        <a href="journal.html">Journal</a>
+        <a href="workshops.html">Explore Workshops</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="our-story.html">Our Story</a>
+      <a href="calm-crafts.html">Calm Crafts</a>
+      <a href="tea-tastings.html">Tea Tastings</a>
+      <a href="journal.html">Journal</a>
+      <a href="workshops.html">Explore Workshops</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="eyebrow-label">Traditional Crafts</span>
+      <h1>Calm Crafts</h1>
+      <div class="page-divider"></div>
+      <p>Ancient art forms rediscovered as acts of modern self-care. Make something beautiful. Quiet your mind.</p>
+    </section>
+
+    <div class="page-content">
+
+      <div class="craft-feature">
+        <div class="craft-feature__img">
+          <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&q=80" alt="Huizhou Fish Lantern" />
+        </div>
+        <div class="craft-feature__text">
+          <span class="eyebrow-label">Intangible Cultural Heritage</span>
+          <h2>Huizhou Fish Lantern<br/><em>徽州鱼灯</em></h2>
+          <p>Originating from the Huizhou region of Anhui Province, the bamboo-framed fish lantern is one of China's most treasured folk art traditions. Carried in New Year processions for centuries, the glowing fish symbolises abundance, joy, and the flow of life.</p>
+          <p>In our workshops, we guide you through the full process — from bending bamboo to painting silk — resulting in a luminous lantern that is entirely your own creation.</p>
+          <a href="workshops.html" class="btn btn-outline">Join a Workshop</a>
+        </div>
+      </div>
+
+      <div class="craft-feature">
+        <div class="craft-feature__img">
+          <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=800&q=80" alt="Floating Lacquer Art" />
+        </div>
+        <div class="craft-feature__text">
+          <span class="eyebrow-label">Traditional Art Form</span>
+          <h2>Floating Lacquer Art<br/><em>漆扇 / 流漆</em></h2>
+          <p>Dating back to the Tang Dynasty, the art of floating lacquer on water — then transferring the swirling patterns onto silk or paper — produces breathtaking results that no machine can replicate. Every piece is a true original.</p>
+          <p>This technique has recently been rediscovered by a new generation of artisans and is celebrated as one of China's most meditative intangible cultural heritage practices. We think it's also one of the most therapeutic things you can do for an afternoon.</p>
+          <a href="workshops.html" class="btn btn-outline">Join a Workshop</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="logo">ME-TIME PLANET</p>
+        <p class="footer-tagline">Rest. Re-Charge. Self-Grow.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="footer-col-title">Explore</p>
+          <a href="our-story.html">Our Story</a>
+          <a href="calm-crafts.html">Calm Crafts</a>
+          <a href="tea-tastings.html">Tea Tastings</a>
+          <a href="journal.html">Journal</a>
+          <a href="workshops.html">Workshops</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Me-Time Planet. Made with love and a cup of tea.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

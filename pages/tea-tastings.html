@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tea Tastings — Me-Time Planet</title>
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    .tea-hero-img {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: block;
+      height: 420px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+    }
+    .tea-intro {
+      max-width: var(--max-width-narrow);
+      margin: var(--space-xl) auto;
+      padding: 0 var(--space-lg);
+      text-align: center;
+    }
+    .tea-intro h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 400;
+      margin-bottom: var(--space-md);
+    }
+    .tea-intro p {
+      color: var(--color-ink-muted);
+      line-height: 1.9;
+      font-size: var(--text-base);
+    }
+    .tea-varieties {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--space-lg) var(--space-xl);
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: var(--space-md);
+    }
+    .tea-card {
+      background: var(--color-paper-2);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      border-left: 3px solid var(--color-gold);
+    }
+    .tea-card .tea-name-zh {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--color-ink-faint);
+      display: block;
+      margin-bottom: var(--space-xs);
+    }
+    .tea-card h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-weight: 400;
+      margin-bottom: var(--space-sm);
+    }
+    .tea-card p {
+      font-size: var(--text-sm);
+      color: var(--color-ink-muted);
+      line-height: 1.75;
+    }
+    .tea-card .tea-notes {
+      margin-top: var(--space-sm);
+      font-size: var(--text-xs);
+      color: var(--color-accent);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 600px) {
+      .tea-hero-img { height: 240px; border-radius: 0; }
+      .tea-varieties { padding: 0 var(--space-md) var(--space-lg); }
+      .tea-intro { padding: 0 var(--space-md); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">ME-TIME PLANET</a>
+      <nav class="main-nav">
+        <a href="our-story.html">Our Story</a>
+        <a href="calm-crafts.html">Calm Crafts</a>
+        <a href="tea-tastings.html">Tea Tastings</a>
+        <a href="journal.html">Journal</a>
+        <a href="workshops.html">Explore Workshops</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="our-story.html">Our Story</a>
+      <a href="calm-crafts.html">Calm Crafts</a>
+      <a href="tea-tastings.html">Tea Tastings</a>
+      <a href="journal.html">Journal</a>
+      <a href="workshops.html">Explore Workshops</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="eyebrow-label">The Art of Tea</span>
+      <h1>Tea Tastings</h1>
+      <div class="page-divider"></div>
+      <p>To truly taste tea is to slow down, breathe, and let the world wait for a moment.</p>
+    </section>
+
+    <div style="padding: 0 var(--space-lg); max-width: var(--max-width); margin: 0 auto;">
+      <img class="tea-hero-img"
+        src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=1200&q=80"
+        alt="Beautiful tea ceremony spread"
+      />
+    </div>
+
+    <div class="tea-intro">
+      <h2>More Than a Drink.</h2>
+      <p>Chinese tea culture stretches back thousands of years — a tradition of seasonal rhythms, careful preparation, and the profound philosophy that slowing down is a form of wisdom. Our tea tasting gatherings are an invitation to rediscover that wisdom, one cup at a time.</p>
+      <p style="margin-top: var(--space-md);">We source teas with intention, brew each variety correctly, and share the stories behind the leaves. You don't need any experience — just a willingness to pause.</p>
+    </div>
+
+    <div class="tea-varieties">
+      <div class="tea-card">
+        <span class="tea-name-zh">龙井</span>
+        <h3>Longjing (Dragon Well)</h3>
+        <p>From the mountains of Hangzhou, this flat-pressed green tea offers a smooth, nutty sweetness with a lingering roasted note. One of China's most celebrated teas.</p>
+        <p class="tea-notes">Notes: Chestnut · Vegetal · Sweet</p>
+      </div>
+      <div class="tea-card">
+        <span class="tea-name-zh">铁观音</span>
+        <h3>Tieguanyin (Iron Goddess)</h3>
+        <p>A legendary oolong from Fujian, with a beautifully complex character — floral and orchid-like when lightly oxidised, roasted and warm when aged.</p>
+        <p class="tea-notes">Notes: Orchid · Honey · Floral</p>
+      </div>
+      <div class="tea-card">
+        <span class="tea-name-zh">白牡丹</span>
+        <h3>White Peony (Bai Mudan)</h3>
+        <p>A gentle white tea with silvery buds and pale leaves. Delicate and softly sweet, it is the most approachable of all Chinese teas — and deeply calming.</p>
+        <p class="tea-notes">Notes: Melon · White flower · Light</p>
+      </div>
+      <div class="tea-card">
+        <span class="tea-name-zh">普洱</span>
+        <h3>Pu-erh (Aged)</h3>
+        <p>Fermented and aged from Yunnan Province. Rich, earthy, and meditative — pu-erh is said to improve with age like fine wine, developing layers of complexity over years and decades.</p>
+        <p class="tea-notes">Notes: Earth · Wood · Deep</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; padding-bottom: var(--space-2xl);">
+      <a href="workshops.html" class="btn btn-primary">Join a Tea Tasting</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="logo">ME-TIME PLANET</p>
+        <p class="footer-tagline">Rest. Re-Charge. Self-Grow.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="footer-col-title">Explore</p>
+          <a href="our-story.html">Our Story</a>
+          <a href="calm-crafts.html">Calm Crafts</a>
+          <a href="tea-tastings.html">Tea Tastings</a>
+          <a href="journal.html">Journal</a>
+          <a href="workshops.html">Workshops</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Me-Time Planet. Made with love and a cup of tea.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

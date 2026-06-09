@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshops — Me-Time Planet</title>
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">ME-TIME PLANET</a>
+      <nav class="main-nav">
+        <a href="our-story.html">Our Story</a>
+        <a href="calm-crafts.html">Calm Crafts</a>
+        <a href="tea-tastings.html">Tea Tastings</a>
+        <a href="journal.html">Journal</a>
+        <a href="workshops.html">Explore Workshops</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="our-story.html">Our Story</a>
+      <a href="calm-crafts.html">Calm Crafts</a>
+      <a href="tea-tastings.html">Tea Tastings</a>
+      <a href="journal.html">Journal</a>
+      <a href="workshops.html">Explore Workshops</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="eyebrow-label">Upcoming Experiences</span>
+      <h1>Explore Workshops</h1>
+      <div class="page-divider"></div>
+      <p>Small gatherings. Thoughtful craft. Moments that belong entirely to you.</p>
+    </section>
+
+    <div class="page-content">
+      <div class="cards-grid">
+
+        <article class="workshop-card">
+          <img class="workshop-card__img"
+            src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&q=80"
+            alt="Huizhou Fish Lantern Workshop" />
+          <div class="workshop-card__body">
+            <span class="workshop-card__tag">Intangible Cultural Heritage</span>
+            <h3>DIY Huizhou Fish Lantern</h3>
+            <p>Learn the ancient craft of bamboo-framed fish lanterns from the Huizhou region. Guided step-by-step, you'll leave with a glowing lantern handcrafted by your own hands.</p>
+            <a href="#book" class="btn btn-primary">Register Interest</a>
+            <div class="workshop-card__meta">
+              <span>📍 To be announced</span>
+              <span>👥 Max 8 people</span>
+              <span>⏱ 3 hours</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="workshop-card">
+          <img class="workshop-card__img"
+            src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=600&q=80"
+            alt="Floating Lacquer Art" />
+          <div class="workshop-card__body">
+            <span class="workshop-card__tag">Traditional Art</span>
+            <h3>Floating Lacquer Art (漆扇)</h3>
+            <p>Experience the meditative magic of floating lacquer on water to create a one-of-a-kind silk fan. Each pattern is uniquely yours — no two are ever the same.</p>
+            <a href="#book" class="btn btn-primary">Register Interest</a>
+            <div class="workshop-card__meta">
+              <span>📍 To be announced</span>
+              <span>👥 Max 10 people</span>
+              <span>⏱ 2 hours</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="workshop-card">
+          <img class="workshop-card__img"
+            src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80"
+            alt="Tea Tasting Party" />
+          <div class="workshop-card__body">
+            <span class="workshop-card__tag">Tea &amp; Ritual</span>
+            <h3>Guided Tea Tasting Afternoon</h3>
+            <p>An intimate tasting of four seasonal teas — Longjing, Tieguanyin, Pu-erh, and White Peony. Learn how to taste, not just drink, and find the variety that resonates with your soul.</p>
+            <a href="#book" class="btn btn-primary">Register Interest</a>
+            <div class="workshop-card__meta">
+              <span>📍 To be announced</span>
+              <span>👥 Max 12 people</span>
+              <span>⏱ 2.5 hours</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Newsletter / Interest Form Placeholder -->
+      <div style="
+        margin-top: var(--space-2xl);
+        background: var(--color-paper-2);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl) var(--space-lg);
+        text-align: center;
+      ">
+        <span class="eyebrow-label">Stay in the Loop</span>
+        <h2 style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 400; margin-bottom: var(--space-md);">Be First to Know</h2>
+        <p style="color: var(--color-ink-muted); max-width: 480px; margin: 0 auto var(--space-lg); line-height: 1.8;">
+          Workshop dates are announced first on our WeChat Official Account and to our mailing list. Follow along so you don't miss your spot.
+        </p>
+        <a href="#wechat" class="btn btn-outline">Follow on WeChat</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="logo">ME-TIME PLANET</p>
+        <p class="footer-tagline">Rest. Re-Charge. Self-Grow.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="footer-col-title">Explore</p>
+          <a href="our-story.html">Our Story</a>
+          <a href="calm-crafts.html">Calm Crafts</a>
+          <a href="tea-tastings.html">Tea Tastings</a>
+          <a href="journal.html">Journal</a>
+          <a href="workshops.html">Workshops</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Me-Time Planet. Made with love and a cup of tea.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

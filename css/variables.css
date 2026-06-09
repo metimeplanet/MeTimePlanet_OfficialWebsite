@@ -1,0 +1,62 @@
+/* ============================================
+   DESIGN TOKENS — Me-Time Planet
+   Warm organic editorial aesthetic
+============================================ */
+
+:root {
+  /* Color Palette */
+  --color-paper:     #F7F4EE;
+  --color-paper-2:   #EDE8DF;
+  --color-paper-3:   #E3DDD3;
+  --color-ink:       #2A2520;
+  --color-ink-muted: #6B6057;
+  --color-ink-faint: #A49A90;
+  --color-accent:    #B85C38;       /* terracotta */
+  --color-accent-2:  #7A9E7E;       /* sage green */
+  --color-gold:      #C9A96E;       /* warm gold */
+  --color-white:     #FFFFFF;
+
+  /* Typography */
+  --font-display:  'Cormorant Garamond', Georgia, serif;
+  --font-body:     'Jost', 'Helvetica Neue', sans-serif;
+
+  /* Font sizes (fluid-ish) */
+  --text-xs:    0.7rem;
+  --text-sm:    0.8rem;
+  --text-base:  0.95rem;
+  --text-md:    1.1rem;
+  --text-lg:    1.4rem;
+  --text-xl:    2rem;
+  --text-2xl:   2.8rem;
+  --text-3xl:   3.8rem;
+  --text-hero:  clamp(2.8rem, 5vw, 4.5rem);
+
+  /* Spacing */
+  --space-xs:  0.4rem;
+  --space-sm:  0.8rem;
+  --space-md:  1.5rem;
+  --space-lg:  3rem;
+  --space-xl:  5rem;
+  --space-2xl: 8rem;
+
+  /* Layout */
+  --max-width:       1180px;
+  --max-width-narrow: 720px;
+  --nav-height:      68px;
+
+  /* Borders */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Transitions */
+  --transition-fast:   0.15s ease;
+  --transition-base:   0.3s ease;
+  --transition-slow:   0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows */
+  --shadow-sm:  0 2px 8px rgba(42, 37, 32, 0.08);
+  --shadow-md:  0 6px 24px rgba(42, 37, 32, 0.12);
+  --shadow-lg:  0 16px 48px rgba(42, 37, 32, 0.16);
+}
