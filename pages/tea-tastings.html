@@ -48,8 +48,22 @@
     .tea-card {
       background: var(--color-paper-2);
       border-radius: var(--radius-lg);
-      padding: var(--space-lg);
+      overflow: hidden;
       border-left: 3px solid var(--color-gold);
+      display: flex;
+      flex-direction: column;
+    }
+    .tea-card-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+    .tea-card-content {
+      padding: var(--space-lg);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
     .tea-card .tea-name-zh {
       font-family: var(--font-display);
@@ -70,7 +84,7 @@
       line-height: 1.75;
     }
     .tea-card .tea-notes {
-      margin-top: var(--space-sm);
+      margin-top: auto;
       font-size: var(--text-xs);
       color: var(--color-accent);
       font-weight: 500;
@@ -119,7 +133,7 @@
 
     <div style="padding: 0 var(--space-lg); max-width: var(--max-width); margin: 0 auto;">
       <img class="tea-hero-img"
-        src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=1200&q=80"
+        src="../media/tea_ceremony_2.webp"
         alt="Beautiful tea ceremony spread"
       />
     </div>
@@ -132,28 +146,40 @@
 
     <div class="tea-varieties">
       <div class="tea-card">
-        <span class="tea-name-zh">龙井</span>
-        <h3>Longjing (Dragon Well)</h3>
-        <p>From the mountains of Hangzhou, this flat-pressed green tea offers a smooth, nutty sweetness with a lingering roasted note. One of China's most celebrated teas.</p>
-        <p class="tea-notes">Notes: Chestnut · Vegetal · Sweet</p>
+        <img class="tea-card-image" src="../media/Taiping_Houkui_1.jpg" alt="Taiping Houkui tea" />
+        <div class="tea-card-content">
+          <span class="tea-name-zh">太平猴魁</span>
+          <h3>Taiping Houkui</h3>
+          <p>A distinctive flat-leafed green tea from Anhui Province, recognizable by its long, slender shape and silvery appearance. Complex and slightly sweet with hints of chestnut and honey, it offers a smooth mouthfeel and a lingering floral finish — a tea that rewards patient appreciation.</p>
+          <p class="tea-notes">Notes: Honey · Floral · Smooth</p>
+        </div>
       </div>
       <div class="tea-card">
-        <span class="tea-name-zh">铁观音</span>
-        <h3>Tieguanyin (Iron Goddess)</h3>
-        <p>A legendary oolong from Fujian, with a beautifully complex character — floral and orchid-like when lightly oxidised, roasted and warm when aged.</p>
-        <p class="tea-notes">Notes: Orchid · Honey · Floral</p>
+        <img class="tea-card-image" src="../media/Tieguanyin_1.webp" alt="Tieguanyin Iron Goddess tea" />
+        <div class="tea-card-content">
+          <span class="tea-name-zh">铁观音</span>
+          <h3>Tieguanyin (Iron Goddess)</h3>
+          <p>A legendary oolong from Fujian, with a beautifully complex character — floral and orchid-like when lightly oxidised, roasted and warm when aged.</p>
+          <p class="tea-notes">Notes: Orchid · Honey · Floral</p>
+        </div>
       </div>
       <div class="tea-card">
-        <span class="tea-name-zh">白牡丹</span>
-        <h3>White Peony (Bai Mudan)</h3>
-        <p>A gentle white tea with silvery buds and pale leaves. Delicate and softly sweet, it is the most approachable of all Chinese teas — and deeply calming.</p>
-        <p class="tea-notes">Notes: Melon · White flower · Light</p>
+        <img class="tea-card-image" src="../media/Huangshan_Maofeng_1.jpeg" alt="Yellow Mountain Fur Peak tea" />
+        <div class="tea-card-content">
+          <span class="tea-name-zh">黄山毛峰</span>
+          <h3>Yellow Mountain Fur Peak</h3>
+          <p>A premium green tea from the misty peaks of Yellow Mountain, with delicate downy buds that unfurl into tender leaves. Fresh and floral with a subtle chestnut sweetness, it captures the essence of high-altitude gardens — crisp, elegant, and refreshing.</p>
+          <p class="tea-notes">Notes: Orchid · Floral · Fresh</p>
+        </div>
       </div>
       <div class="tea-card">
-        <span class="tea-name-zh">普洱</span>
-        <h3>Pu-erh (Aged)</h3>
-        <p>Fermented and aged from Yunnan Province. Rich, earthy, and meditative — pu-erh is said to improve with age like fine wine, developing layers of complexity over years and decades.</p>
-        <p class="tea-notes">Notes: Earth · Wood · Deep</p>
+        <img class="tea-card-image" src="../media/Pu_erh_1.webp" alt="Pu-erh Aged tea" />
+        <div class="tea-card-content">
+          <span class="tea-name-zh">普洱</span>
+          <h3>Pu-erh (Aged)</h3>
+          <p>Fermented and aged from Yunnan Province. Rich, earthy, and meditative — pu-erh is said to improve with age like fine wine, developing layers of complexity over years and decades.</p>
+          <p class="tea-notes">Notes: Earth · Wood · Deep</p>
+        </div>
       </div>
     </div>
 
